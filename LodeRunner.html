@@ -1,0 +1,47 @@
+<HTML>
+
+	<!--
+	Lode Runner!!! HTML
+	
+	01234567890123456789012345678901234567890123456789012345678901234567890123456789
+	-->
+	
+	<HEAD>
+	<meta charset="UTF-8">
+	<title>Linguagens e Ambientes de Programação (2019/2020) [Eng.Inf. - DI/FCT/UNL] - 3º projeto prático (Javascript)</title>
+	
+	<SCRIPT TYPE="text/javascript" src="LodeRunner0.js"></SCRIPT>
+	<SCRIPT TYPE="text/javascript" src="LodeRunner.js"></SCRIPT>
+	
+	</HEAD>
+	
+	
+	<BODY onload="onLoad()">
+	<p><b>LodeRunner</b> -- Pedro Coelho (54939), Manuel Soares (55937)
+	<FORM NAME="form1">
+		<CANVAS id="canvas1" width="504" height="272" style="border:3px solid #000000;">
+			Your browser doesn't support the HTML5 CANVAS tag.
+		</CANVAS> <p>
+		Score: <input TYPE="text" id="scoretxt" VALUE=""  READONLY SIZE=4 style="margin-right: 5px; border:none; font-size: 97%">
+		Gold on this level: <INPUT TYPE="text" id="scoreOnLeveltxt" VALUE="" SIZE=4 READONLY style="margin-right: 5px; border:none; font-size: 97%">
+		Level: <INPUT TYPE="text" id="leveltxt" VALUE="" SIZE=4 READONLY style="margin-right: 5px; border:none; font-size: 97%">
+		Lives left: <INPUT TYPE="text" id="livestxt" VALUE="" SIZE=4 READONLY style="margin-right: 5px; border:none; font-size: 97%">
+		<p><INPUT TYPE="button" id=restart VALUE="Restart game" style="margin-left: 5px" onclick="restartG()">
+		<p>Do you wanna listen to some tunes?
+			<b>
+		<p> Yes<INPUT TYPE="radio" id="button1" NAME="MUSIC" VALUE="" SIZE=10 OnClick="b()" style="margin-right: 10px">
+			No<INPUT TYPE="radio" id="button2" NAME="MUSIC" VALUE="" SIZE=10 OnClick="b()">
+		</b>
+		<p> Game difficulty:					
+		<INPUT TYPE="button" id=diffEasy VALUE="Easy" style="margin-left: 5px" onclick="setDiffEasy()">
+		<INPUT TYPE="button" id=diffHard VALUE="Hard" style="margin-left: 5px" onclick="setDiffHard()">
+		<INPUT TYPE="button" id=diffImpossible VALUE="Impossible" style="margin-left: 5px" onclick="setDiffImpossible()">
+		
+			
+	</FORM>
+	</BODY>
+	
+	</HTML>
+	<!-- código inicial de AMD/2020 -->
+	<!-- vim:set ts=4 sw=4 et: -->
+	
